@@ -8,6 +8,7 @@ init();
 //1. alphabets, numbers, $ and _ is allowed.
 //2. some words are reserved -> reserved words.
 
+//2020 feature, where it can be used for both window(browser) and global(server)
 globalThis
 
 //if you do not declare with var, const, let, it will save the value to the global object.
