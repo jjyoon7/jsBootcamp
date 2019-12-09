@@ -15,3 +15,8 @@ globalThis
 //ex this will cause a problem, because this will overwrite the alert function of the window.
 alert  = 'hello';
 alert('he');
+
+//there are 2 modes that js is running.
+//sloppy mode which is a default
+//and the stirct mode, where it will throw more errors.
+//strict mode can be declared by putting 'use strict'; in the very first line.
