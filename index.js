@@ -21,6 +21,8 @@ alert('he');
 //and the stirct mode, where it will throw more errors.
 //strict mode can be declared by putting 'use strict'; in the very first line.
 
+//but strict mode does not prevent everthing.
+
 //example of hoisting
 console.log(age);
 var age = 25;
@@ -31,3 +33,11 @@ console.loe(age);
 var age = 25;
 
 //this is the reason why console.log(age) has value of undefined.
+//because js will hoist
+
+//this will not run, because let and const prevents the hoisting.
+console.log(age2)
+let age2 = 24;
+//these is called temporal dead zone. 
+
+
