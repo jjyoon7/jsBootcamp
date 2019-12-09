@@ -20,3 +20,14 @@ alert('he');
 //sloppy mode which is a default
 //and the stirct mode, where it will throw more errors.
 //strict mode can be declared by putting 'use strict'; in the very first line.
+
+//example of hoisting
+console.log(age);
+var age = 25;
+
+//how js sees this.
+var age;
+console.loe(age);
+var age = 25;
+
+//this is the reason why console.log(age) has value of undefined.
