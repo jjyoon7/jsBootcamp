@@ -41,3 +41,16 @@ let age2 = 24;
 //these is called temporal dead zone. 
 
 
+//with let, you can update and change the value. 
+//that is why you can initialize the let variable without assining it in the first place,
+//but assign it later.
+let age3;
+
+age3 = 24;
+
+age3 = 26;
+
+//but with const, you must give the initial value. 
+//and you cannot change or update it.
+const age4 = 35;
+
