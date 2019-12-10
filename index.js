@@ -68,3 +68,9 @@ if (isSale) {
 }
 
 console.log('price', price);
+
+const threeLines = `
+This 
+spans three 
+lines.
+`;
