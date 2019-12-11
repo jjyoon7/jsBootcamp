@@ -74,3 +74,18 @@ This
 spans three 
 lines.
 `;
+
+// if statements - evaluate boolean values
+const prefersDarkMode = true;
+const prefersSolarizedMode = true;
+
+if (prefersDarkMode) {
+  console.log('dark mode set!');  
+  document.body.style.background = 'black';
+} else if (prefersSolarizedMode) {
+   console.log('solarized mode set!'); 
+   document.body.style.background = 'palegoldenrod';
+} else {    
+  console.log('light mode set!');
+  document.body.style.background = 'ghostwhite';
+}
