@@ -105,3 +105,5 @@ switch (colorMode) {
       console.log('light mode set!');
       document.body.style.background = 'ghostwhite';
 }
+
+// condition ? then expression : else expression;
