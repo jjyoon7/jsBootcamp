@@ -107,3 +107,22 @@ switch (colorMode) {
 }
 
 // condition ? then expression : else expression;
+
+//short-circuiting
+const response = prompt("What’s your name?");
+const isEmailVerified = true;
+
+// let username;
+
+// if (response) {
+//   if (isEmailVerified) {      
+//     username = response;
+//   }  
+// } else {
+//   username = "guest";
+// }
+
+// const username = "" && "a better name";
+// const username = response || 'guest';
+const username = isEmailVerified && response || 'guest';
+console.log(username);
