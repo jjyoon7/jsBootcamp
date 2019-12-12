@@ -133,3 +133,15 @@ function echo(input, greeting) {
  
  const result = echo(42, "Hi");
  console.log(result);
+
+const user1 = "Reed";
+const user2 = "Doug";
+
+// const message = `User (user) says: (text)`;
+
+function display(user, text) {
+    return `User ${user} says: ${text}`;
+}
+
+const message = display(user1, "hello");
+console.log(message);
