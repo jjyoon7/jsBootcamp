@@ -126,3 +126,10 @@ const isEmailVerified = true;
 // const username = response || 'guest';
 const username = isEmailVerified && response || 'guest';
 console.log(username);
+
+function echo(input, greeting) {
+  return `${greeting} ${input}`;  
+ }
+ 
+ const result = echo(42, "Hi");
+ console.log(result);
