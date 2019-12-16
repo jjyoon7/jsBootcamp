@@ -150,6 +150,7 @@ function handleLikePost(step) {
   let likeCount = 0;
   //To use a closure, define a function inside another function and expose it. 
   //To expose a function, return it or pass it to another function.
+  //Among other things, closures are commonly used to give objects data privacy.
   return function addLike() {
     likeCount += step;    
     return likeCount;
