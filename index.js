@@ -169,12 +169,12 @@ console.log(doubleLike());
 //by giving decimalPlaces a default value of 1, 
 //it will use 1 as default when the second argument has not been given to the function.
 function convertTemperature(celsius, decimalPlaces = 1) {
-  // celsius to fahrenheit
-//   decimalPlaces = decimalPlaces || 1;
-const fahrenheit = celsius * 1.8 + 32;
-//toFixed() is a function that you can formats a number using fixed-point notation.
-//but it returns string, so you need to use Number() function
-return Number(fahrenheit.toFixed(decimalPlaces));
+    // celsius to fahrenheit
+  //   decimalPlaces = decimalPlaces || 1;
+  const fahrenheit = celsius * 1.8 + 32;
+  //toFixed() is a function that you can formats a number using fixed-point notation.
+  //but it returns string, so you need to use Number() function
+  return Number(fahrenheit.toFixed(decimalPlaces));
 }
 
 console.log(convertTemperature(21, 0));
