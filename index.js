@@ -178,3 +178,17 @@ function convertTemperature(celsius, decimalPlaces = 1) {
 }
 
 console.log(convertTemperature(21, 0));
+
+//arrow function returns the value by default. 
+const username = 'john';
+
+const capitalize = name => `${name.charAt(0).toUpperCase()}${name.slice(1)}`;  
+ 
+//higher order function
+function greetUser(name, callback) {
+  return callback(capitalize(name));  
+}
+
+const result = greetUser(username, name => `Hi there, ${name}!`);
+
+console.log(result);
