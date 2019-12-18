@@ -189,6 +189,7 @@ function greetUser(name, callback) {
   return callback(capitalize(name));  
 }
 
+//the callback() is given here
 const result = greetUser(username, name => `Hi there, ${name}!`);
 
 console.log(result);
