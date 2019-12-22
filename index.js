@@ -221,6 +221,8 @@ const getSocialMediaData = getData('https://jsonplaceholder.typicode.com');
 const getSocialMediaPosts = getSocialMediaData('/posts');
 const getSocialMediaComments = getSocialMediaData('/comments');
 
+//you are able to use arrow function with posts argument here,\
+//because the callback function is returned from 'getSocialMediaData('/posts');'
 getSocialMediaPosts(posts => {
   posts.forEach(post => console.log(post.title));  
 });
