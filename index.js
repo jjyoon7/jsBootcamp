@@ -215,6 +215,8 @@ function getData(baseUrl) {
 
 const getSocialMediaData = getData('https://jsonplaceholder.typicode.com');
 
+//when getSocialMediaData function returns a function that takes a 'route' as argument, 
+//you are giving that route argument here as '/posts', and storing that data in getSocialMediaPosts.
 const getSocialMediaPosts = getSocialMediaData('/posts');
 const getSocialMediaComments = getSocialMediaData('/comments');
 
