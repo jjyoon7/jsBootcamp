@@ -193,3 +193,31 @@ function greetUser(name, callback) {
 const result = greetUser(username, name => `Hi there, ${name}!`);
 
 console.log(result);
+
+//partial application
+
+//in arrow function format
+const getData = baseUrl => route => callback => 
+      fetch(`${baseUrl}${route}`)
+        .then(response => response.json())
+        .then(data => callback(data));  
+
+//in function format
+function getData(baseUrl) {
+  return function(route) { 
+    return function(callback) {    
+      fetch(`${baseUrl}${route}`)
+        .then(response => response.json())
+        .then(data => callback(data));  
+    }     
+  }  
+}
+
+const getSocialMediaData = getData('https://jsonplaceholder.typicode.com');
+
+const getSocialMediaPosts = getSocialMediaData('/posts');
+const getSocialMediaComments = getSocialMediaData('/comments');
+
+getSocialMediaPosts(posts => {
+  posts.forEach(post => console.log(post.title));  
+});
