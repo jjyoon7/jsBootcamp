@@ -194,7 +194,8 @@ const result = greetUser(username, name => `Hi there, ${name}!`);
 
 console.log(result);
 
-//partial application
+//partial application reduces the total number of argument for a function
+//and giving a pattern to a function to remember a data that has been passed to it
 
 //in arrow function format
 const getData = baseUrl => route => callback => 
