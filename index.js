@@ -236,6 +236,7 @@ const colors = {
     orange: '#f60',
 }
 
+//function stored inside of the object could look like this
 {
   sayHi() {
     console.log('hi')  
