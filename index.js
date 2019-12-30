@@ -235,3 +235,9 @@ const colors = {
     blue: '#00f',
     orange: '#f60',
 }
+
+{
+  sayHi() {
+    console.log('hi')  
+  }
+}
