@@ -275,3 +275,13 @@ const colors = {
 
 // colors[color] = hexCode;
 console.log(colors);
+
+//this function would not work, because 'key' does not exist in 'colors' object.
+function getColor(key) {
+  return colors.key;
+}
+
+//but this function would work, because it means the key property can be changed and updated.
+function getColor(key) {
+  return colors[key];
+}
