@@ -226,3 +226,12 @@ const getSocialMediaComments = getSocialMediaData('/comments');
 getSocialMediaPosts(posts => {
   posts.forEach(post => console.log(post.title));  
 });
+
+//object
+const blueColor = '#00f';
+const orangeColor = '#f60';
+
+const colors = {
+    blue: '#00f',
+    orange: '#f60',
+}
