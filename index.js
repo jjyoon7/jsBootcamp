@@ -285,3 +285,5 @@ function getColor(key) {
 function getColor(key) {
   return colors[key];
 }
+
+delete colors.blue;
