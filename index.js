@@ -287,3 +287,21 @@ function getColor(key) {
 }
 
 delete colors.blue;
+
+//object destructuring
+const user = {
+  name: "Reed",
+  username: "Reedbarger",
+  email: "reed@gmail.com",
+  details: {
+    title: "Programmer"  
+  }  
+};
+
+const { username, email } = user;
+
+function displayUser() {
+  console.log(`username: ${username}, email: ${email}`);  
+}
+
+displayUser()
