@@ -329,4 +329,5 @@ const newUser = {
   password: "mypassword"  
 };
 
+//target and the source.
 console.log(Object.assign({}, user, newUser));
