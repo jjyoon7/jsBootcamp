@@ -329,5 +329,5 @@ const newUser = {
   password: "mypassword"  
 };
 
-//target and the source.
-console.log(Object.assign({}, user, newUser));
+//target is the first parameter and the rest follows are the source.
+console.log(Object.assign({}, user, newUser, { verified: false }));
