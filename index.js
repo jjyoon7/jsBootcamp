@@ -306,10 +306,10 @@ function displayUser() {
 
 displayUser()
 
-const { name, details: { title} } = user;
+// const { name, details: { title} } = user;
 
-function displayUserBio() {
+function displayUserBio({ name, details: { title} }) {
   console.log(`${name} is a ${title}`); 
 }
 
-displayUserBio()
+displayUserBio(user)
