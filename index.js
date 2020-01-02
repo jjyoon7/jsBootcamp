@@ -305,3 +305,11 @@ function displayUser() {
 }
 
 displayUser()
+
+const { name, details: { title} } = user;
+
+function displayUserBio() {
+  console.log(`${name} is a ${title}`); 
+}
+
+displayUserBio()
