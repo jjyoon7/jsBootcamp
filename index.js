@@ -329,5 +329,7 @@ const newUser = {
   password: "mypassword"  
 };
 
+const createdUser = { ...user, ...newUser, verified: false };
+
 //target is the first parameter and the rest follows are the source.
 console.log(Object.assign({}, user, newUser, { verified: false }));
