@@ -329,6 +329,7 @@ const newUser = {
   password: "mypassword"  
 };
 
+//note that the order of the object matters.
 const createdUser = { ...user, ...newUser, verified: false };
 
 //target is the first parameter and the rest follows are the source.
