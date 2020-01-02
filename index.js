@@ -312,4 +312,21 @@ function displayUserBio({ name, details: { title} }) {
   console.log(`${name} is a ${title}`); 
 }
 
-displayUserBio(user)
+displayUserBio(user);
+
+//merge objects with the object spread
+const user = {
+  name: "",
+  username: "",
+  phoneNumber: "",
+  email: "",
+  password: ""  
+};
+
+const newUser = {
+  username: "ReedBarger",
+  email: "reed@gmail.com",
+  password: "mypassword"  
+};
+
+console.log(Object.assign({}, user, newUser));
