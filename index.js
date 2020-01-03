@@ -346,4 +346,9 @@ const map1 = new Map([
   [true, true]  
 ]);
 
+new Map([
+  ['key', 'value'],
+  ['key2', 'value2'],
+])
+
 map1.set('key', 'value');
