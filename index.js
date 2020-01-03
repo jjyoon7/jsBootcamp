@@ -359,3 +359,14 @@ map1.forEach((value, key) => {
 });
 
 console.log([...map1.keys()])
+
+const user1 = { name: "john" }
+const user2 = { name: "mary" }
+
+const secretKey1 = "asldjfalskdjf";
+const secretKey2 = "alksdjfakjsdf";
+
+const userData = new Map([
+  [user1, secretKey1],
+  [user2, secretKey2]
+]);
