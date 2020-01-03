@@ -346,6 +346,7 @@ const map1 = new Map([
   [true, true]  
 ]);
 
+//inserted order matters.
 new Map([
   ['key', 'value'],
   ['key2', 'value2'],
