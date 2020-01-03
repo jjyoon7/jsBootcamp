@@ -370,3 +370,5 @@ const userData = new Map([
   [user1, secretKey1],
   [user2, secretKey2]
 ]);
+
+const key = userData.get(user1);
