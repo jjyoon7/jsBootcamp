@@ -345,3 +345,5 @@ const map1 = new Map([
   [1, 1],
   [true, true]  
 ]);
+
+map1.set('key', 'value');
