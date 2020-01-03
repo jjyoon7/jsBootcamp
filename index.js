@@ -334,3 +334,14 @@ const createdUser = { ...user, ...newUser, verified: false };
 
 //target is the first parameter and the rest follows are the source.
 console.log(Object.assign({}, user, newUser, { verified: false }));
+
+//map
+const nums = {
+  1: 1,
+  true: true
+};
+
+const map1 = new Map([
+  [1, 1],
+  [true, true]  
+]);
