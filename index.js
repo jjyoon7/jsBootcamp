@@ -366,9 +366,16 @@ const user2 = { name: "mary" }
 const secretKey1 = "asldjfalskdjf";
 const secretKey2 = "alksdjfakjsdf";
 
-const userData = new weakMap([
+const userData = new WeakMap([
   [user1, secretKey1],
   [user2, secretKey2]
 ]);
 
 const key = userData.get(user1);
+
+const userMap = new Map([
+  ['name', 'john'],
+  ['verified', true]
+])
+
+console.log(userMap.size);
