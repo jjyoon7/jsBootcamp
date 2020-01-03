@@ -366,7 +366,7 @@ const user2 = { name: "mary" }
 const secretKey1 = "asldjfalskdjf";
 const secretKey2 = "alksdjfakjsdf";
 
-const userData = new Map([
+const userData = new weakMap([
   [user1, secretKey1],
   [user2, secretKey2]
 ]);
