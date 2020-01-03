@@ -384,7 +384,8 @@ console.log(userMap.size);
 const userData = { 
   username: "Reed",
   title: "JavaScript Programmer",
-  getBio() {
+  //this will throw en error bcs now it is refering to an 'window' not the this scope of userData.
+  getBio: () => {
     console.log(`User ${this.username} is a ${this.title}`);
   },
   askToFriend() {
