@@ -386,6 +386,14 @@ const userData = {
   title: "JavaScript Programmer",
   getBio() {
     console.log(`User ${this.username} is a ${this.title}`);
+  },
+  askToFriend() {
+    //you need to save 'this' in 'that' variable so the child funcion can get acess to the this property.
+    //at certain point, 'this' loses its binding.
+    let that = this;
+    setTimeout(function() {
+      console.log(`Would you like to friend ${that.username}?`);   
+    }, 2000);  
   }  
 }
 
