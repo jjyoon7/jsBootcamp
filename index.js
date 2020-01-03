@@ -354,4 +354,8 @@ new Map([
 
 map1.set('key', 'value');
 
+map1.forEach((value, key) => {
+  console.log(key, value);  
+});
+
 console.log([...map1.keys()])
