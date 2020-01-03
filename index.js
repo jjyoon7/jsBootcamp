@@ -352,3 +352,5 @@ new Map([
 ])
 
 map1.set('key', 'value');
+
+console.log([...map1.keys()])
