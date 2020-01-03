@@ -379,3 +379,14 @@ const userMap = new Map([
 ])
 
 console.log(userMap.size);
+
+//methods with arrow function
+const userData = { 
+  username: "Reed",
+  title: "JavaScript Programmer",
+  getBio() {
+    console.log(`User ${this.username} is a ${this.title}`);
+  }  
+}
+
+userData.getBio();
