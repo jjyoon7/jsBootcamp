@@ -400,7 +400,7 @@ const userData = {
 userData.getBio();
 
 //flexible collections with arrays
-const todos = {};
+const todos = [];
 
 const todo1 = {
   text: 'Wash the dishes',
@@ -412,6 +412,8 @@ const todo2 = {
   complete: false  
 };
 
-todos[1] = todo1;
-todos[2] = todo2;
+todos.push(todo1, todo2);
+todos.pop();
+// todos[1] = todo2;
+// todos[0] = todo1;
 console.log(todos);
