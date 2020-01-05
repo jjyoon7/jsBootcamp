@@ -427,3 +427,5 @@ const temperatures = [
 ];
 
 console.log(temperatures.includes(50));
+const result = temperatures.some(temperature => temperature.isRecordTemp === true); // true / false
+console.log(result);
