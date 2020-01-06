@@ -498,3 +498,9 @@ const priceAdded = menuItems.reduce((accumulator, menuItem) => {
   return accumulator + menuItem.price;  
 }, 0);
 console.log(priceAdded)
+
+const twiceNum = numbers.reduce((accumulator, number) => {
+  return accumulator = number * 2;
+}, []);
+
+console.log(twiceNum);
