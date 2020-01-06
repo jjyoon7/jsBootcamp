@@ -462,5 +462,7 @@ const temperatures = [
 ];
 
 const newTemps = temperatures.map(temperature => 
-temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
+  //with the spread operator, you are creating a new object with existing propertys and with comma seperate, 
+  //you are adding the new property when the condition has been met.
+  temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
 );
