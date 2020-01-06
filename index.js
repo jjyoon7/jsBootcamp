@@ -480,7 +480,7 @@ const restaurants = [
   { name: 'Shake Shack', milesAway: 5.3 }
 ]
 
-const results = restaurants.filter(restaurant => 
-  restaurant.name.startsWith('C') && restaurant.milesAway < 3
+const result = restaurants.find(restaurant => 
+  restaurant.name.lowerCase().includes('north') && restaurant.milesAway < 3
 );
-console.log(results);
+console.log(result);
