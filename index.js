@@ -461,13 +461,11 @@ const temperatures = [
   { degrees: 64, isRecordTemp: false }
 ];
 
-const newTemps = temperatures.map(temperature => 
+temperatures.map(temperature => 
   //with the spread operator, you are creating a new object with existing propertys and with comma seperate, 
   //you are adding the new property when the condition has been met.
   temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
-);
-
-newTemps.forEach(temperature => {
+).forEach(temperature => {
   if (temperature.isHigh) {
     console.log(`Temperature ${temperature.degrees} was a record high last week!`);  
   }
