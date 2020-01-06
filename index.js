@@ -448,7 +448,6 @@ if (username === false) {
 }
 
 //short-circuiting
-
 //or operator
 const username = true || false;
 //and operator
