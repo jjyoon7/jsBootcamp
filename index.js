@@ -466,3 +466,9 @@ const newTemps = temperatures.map(temperature =>
   //you are adding the new property when the condition has been met.
   temperature.degrees > 70 ? { ...temperature, isHigh: true } : temperature 
 );
+
+newTemps.forEach(temperature => {
+  if (temperature.isHigh) {
+    console.log(`Temperature ${temperature.degrees} was a record high last week!`);  
+  }
+})
