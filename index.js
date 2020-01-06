@@ -508,3 +508,7 @@ const twiceNum = numbers.reduce((accumulator, number) => {
 const withMap = numbers.map( number => number * 2);
 
 console.log(twiceNum);
+
+const three = numbers.reduce((acc, num) => num > 3 ? acc.push(num) : acc, []);
+
+console.log(three);
