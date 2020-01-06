@@ -438,3 +438,17 @@ console.log(result);
 // null
 // undefined
 // NaN
+
+const username = '';
+
+//js will do a coercion and convert the username's empty string value to false and compare that with the false value.
+//which ends up with 'false', in this case, you can simply use bang, to say if username value is false.
+if (username === false) {
+  console.log('no user');
+}
+
+//short-circuiting
+//or operator
+const username = true || false;
+//and operator
+const isVerified = true && false;
