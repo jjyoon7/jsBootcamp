@@ -495,6 +495,6 @@ const menuItems = [
 ];
 
 const priceAdded = menuItems.reduce((accumulator, menuItem) => {
-  return accumulator += menuItem.price;  
+  return accumulator + menuItem.price;  
 }, 0);
 console.log(priceAdded)
