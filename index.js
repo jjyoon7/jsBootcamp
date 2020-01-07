@@ -596,4 +596,5 @@ const users = {
   }
 };
 
+//instead of using chain methods, consider reduce
 Object.entries(users).reduce();
