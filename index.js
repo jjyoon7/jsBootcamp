@@ -539,12 +539,14 @@ console.log(favouritePlaces.bar)
 console.log(favouritePlaces.cafe)
 console.log(favouritePlaces.restaurant)
 
+
 const finalMenuItems = [
   "American Cheeseburger",
   "Southern Fried Chicken",
   "Glazed Salmon"
 ];
 
+//rest parameter
 const [winner, ...losers] = finalMenuItems;
 
 console.log({ winner, losers });
