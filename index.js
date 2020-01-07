@@ -512,3 +512,12 @@ console.log(twiceNum);
 const three = numbers.reduce((acc, num) => num > 3 ? acc.concat(num) : acc, []);
 
 console.log(three);
+
+//mold arrays with the spread operator and decide on order.
+const breakfastMenuIdeas = ["Buckwheat Pancakes"];
+const dinnerMenuIdeas = ["Glazed Salmon", "Meatloaf", "American Cheeseburger"];
+
+const allMenuIdeas = ["Harvest Salad", "Southern Fried Chicken"];
+
+const otherMenuIdeas = [...breakfastMenuIdeas, ...allMenuIdeas];
+console.log(otherMenuIdeas);
