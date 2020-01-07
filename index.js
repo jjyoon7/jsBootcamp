@@ -580,3 +580,20 @@ console.log(monthlySum)
 
 const totalSum = monthlySum.reduce( (acc, num) => acc += num, 0);
 console.log(totalSum);
+
+const users = {
+  '2345234': {
+    name: "John",
+    age: 29
+  },
+  '8798129': {
+    name: "Jane",
+    age: 42
+  },
+  '1092384': {
+    name: "Fred",
+    age: 17 
+  }
+};
+
+Object.entries(users).reduce();
