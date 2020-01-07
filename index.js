@@ -566,3 +566,17 @@ const user = {
 
 const ageExists = Object.keys(user).includes('age');
 console.log(ageExists);
+
+const monthlyExpenses = {
+  food: 400,
+  rent: 1700,
+  insurance: 550,
+  internet: 49,
+  phone: 95  
+};
+
+const monthlySum = Object.values(monthlyExpenses);
+console.log(monthlySum)
+
+const totalSum = monthlySum.reduce( (acc, num) => acc += num, 0);
+console.log(totalSum);
