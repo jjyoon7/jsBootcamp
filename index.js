@@ -521,3 +521,30 @@ const allMenuIdeas = ["Harvest Salad", "Southern Fried Chicken"];
 
 const otherMenuIdeas = [...breakfastMenuIdeas, ...allMenuIdeas];
 console.log(otherMenuIdeas);
+
+const bar = "stoplight";
+const cafe = "4850";
+const restaurant = "rijsel";
+
+const favouritePlaces = {
+    bar,
+    cafe,
+    restaurant,
+    greeting() { console.log("greetings")}
+}
+
+const favouritePlacesObj = favouritePlaces.greeting()
+
+console.log(favouritePlaces.bar)
+console.log(favouritePlaces.cafe)
+console.log(favouritePlaces.restaurant)
+
+const finalMenuItems = [
+  "American Cheeseburger",
+  "Southern Fried Chicken",
+  "Glazed Salmon"
+];
+
+const [winner, ...losers] = finalMenuItems;
+
+console.log({ winner, losers });
