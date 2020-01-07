@@ -550,3 +550,19 @@ const finalMenuItems = [
 const [winner, ...losers] = finalMenuItems;
 
 console.log({ winner, losers });
+
+const favouriteSongs = [];
+favouriteSongs.push("ll1", "2good", "why");
+// const poppedSong = favouriteSongs.pop();
+const songsIndex = favouriteSongs.length - 1;
+const lastSong = favouriteSongs[songsIndex]
+console.log(lastSong);
+
+//turn objects to flexible arrays
+const user = {
+  name: 'John',
+  age: 29  
+};
+
+const ageExists = Object.keys(user).includes('age');
+console.log(ageExists);
