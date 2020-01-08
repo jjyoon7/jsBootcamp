@@ -628,3 +628,6 @@ const customerDishes = [
 
 const uniqueDishes = [...new Set(customerDishes)];
 console.log(uniqueDishes)
+
+// JS -> HTML, CSS (DOM - Document Object Model)
+document
