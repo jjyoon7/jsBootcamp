@@ -604,3 +604,9 @@ const usersOver20 = Object.entries(users).reduce((acc, [id, user]) => {
   return acc;
 }, []);
 console.log(usersOver20);
+
+const numbers = new Set([[1], [2], [3]]);
+
+for (const num of numbers) {
+  console.log(num);  
+}
