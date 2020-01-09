@@ -630,4 +630,9 @@ const uniqueDishes = [...new Set(customerDishes)];
 console.log(uniqueDishes)
 
 // JS -> HTML, CSS (DOM - Document Object Model)
-document
+
+document.body.addEventListener('click', event => {
+  if (!event.target.closest('.post')) return;
+  
+  console.log('Do you want to edit this post?')  
+})
