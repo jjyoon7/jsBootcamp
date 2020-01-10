@@ -654,3 +654,14 @@ const student2 = new Student(2, 'Doug');
 student1.addSubject('Math');
 student2.addSubject('Physics');
 console.log(student2.subjects);
+
+// classes === constructor functions
+// classes - create objects with shared methods
+
+// function Student() {}
+
+class Student {
+  constructor() {}   
+    
+  addSubject() {}  
+}
