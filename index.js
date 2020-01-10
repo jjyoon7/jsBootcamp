@@ -661,7 +661,15 @@ console.log(student2.subjects);
 // function Student() {}
 
 class Student {
-  constructor() {}   
+  constructor(id, name, subjects = []) {
+    this.id = id;
+    this.name = name;
+    this.subjects = subjects;      
+  }  
     
   addSubject() {}  
 }
+
+const student1 = new Student(1, 'Reed');
+console.log(student1.addSubject());
+console.log(Student.prototype.addSubject)
