@@ -638,6 +638,7 @@ document.body.addEventListener('click', event => {
 })
 
 function Student(id, name, subjects = []) {
+  //these are all 'instance property'
   this.id = id;
   this.name = name;
   this.subjects = subjects;  
