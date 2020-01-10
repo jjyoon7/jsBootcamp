@@ -667,9 +667,11 @@ class Student {
     this.subjects = subjects;      
   }  
     
-  addSubject() {}  
+  getStudentName() {
+    return `Student: ${this.name}`  
+  }
 }
 
 const student1 = new Student(1, 'Reed');
-console.log(student1.addSubject());
-console.log(Student.prototype.addSubject)
+console.log(student1.getStudentName());
+console.log(Student.prototype.getStudentName)
