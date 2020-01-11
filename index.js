@@ -713,7 +713,7 @@ class Product {
 
 class SaleProduct extends Product {
   constructor(percentOff) {
-    //  super();
+     super();
      this.percentOff = percentOff; 
   }  
 }
