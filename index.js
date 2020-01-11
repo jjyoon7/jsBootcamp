@@ -706,12 +706,24 @@ console.log(fav.genres)
 class Product {
   constructor(name, price, discountable) {
     this.name = name;
-    this.price = price;
+    this._price = price;
     this.discountable = discountable;  
   }  
 
   isDiscountable() {
     return this.discountable;  
+  }
+
+  get price() {
+    return this._price;
+  }
+  
+  set price(price) {
+    if (typeof price !== "number") {
+      return this._price;
+    } else {
+      this._price = price; 
+    }
   }
 }
 
