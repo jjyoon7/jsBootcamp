@@ -675,3 +675,47 @@ class Student {
 const student1 = new Student(1, 'Reed');
 console.log(student1.getStudentName());
 console.log(Student.prototype.getStudentName)
+
+class Film {
+	//Your code here.
+	constructor(id, title, director, releaseYear, genres = []) {
+		this.id = id;
+		this.title = title;
+		this.director = director;
+		this.releaseYear = releaseYear;
+		this.genres = genres;
+	}
+	
+	addGenre(genre) {
+		this.genres = [...this.genres, genre];
+	}
+	
+	getFilmTitle() {
+		return this.title
+	}
+	
+}
+
+// Rest of your code here. 
+
+const fav = new Film(1, "great expectation", "me", "1998");
+console.log(fav.getFilmTitle());
+fav.addGenre("drama"));
+console.log(fav.genres)
+
+class Product {
+  constructor(name, price, discountable) {
+    this.name = name;
+    this.price = price;
+    this.discountable = discountable;  
+  }  
+}
+
+class SaleProduct extends Product {
+  constructor(percentOff) {
+    //  super();
+     this.percentOff = percentOff; 
+  }  
+}
+
+const product1 = new SaleProduct("Coffee Maker", 99, true, 20);
