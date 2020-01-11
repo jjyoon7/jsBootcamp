@@ -712,8 +712,8 @@ class Product {
 }
 
 class SaleProduct extends Product {
-  constructor(percentOff) {
-     super();
+  constructor(name, price, discountable, percentOff) {
+    super(name, price, discountable);
      this.percentOff = percentOff; 
   }  
 }
