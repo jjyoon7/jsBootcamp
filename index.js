@@ -709,6 +709,10 @@ class Product {
     this.price = price;
     this.discountable = discountable;  
   }  
+
+  isDiscountable() {
+    return this.discountable;  
+  }
 }
 
 class SaleProduct extends Product {
@@ -716,6 +720,14 @@ class SaleProduct extends Product {
     super(name, price, discountable);
      this.percentOff = percentOff; 
   }  
+
+  getSalePrice() {
+    if (super.isDiscountable) {
+      return this.price * ((100 - this.percentOff) / 100);
+    } else {
+       return `${this.name} is not eligible for a discount`;
+    }
+  }
 }
 
 const product1 = new SaleProduct("Coffee Maker", 99, true, 20);
