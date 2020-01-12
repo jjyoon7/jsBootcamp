@@ -758,6 +758,9 @@ class Product {
 
   handleFavoriteProduct = () => {
     if (isAuth) {
+      //because you are passing favoriteProduct as callback to the setTimeout,
+      //if you do not bind 'this', it would not know what 'this' is.
+      //because it lost its bound to class Product.
       setTimeout(this.favoriteProduct, 1000);
     } else {
       console.log("You must be signed in to favorite products!");
