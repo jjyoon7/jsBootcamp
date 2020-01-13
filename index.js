@@ -789,4 +789,7 @@ const promise = new Promise((resolve, reject) => {
   setTimeout(() => resolve('done'), 1000);  
 });
 
-promise.then().catch();
+promise
+  .then(value => console.log(value))
+  .catch(error => console.error(error))
+  .finally(() => console.log('done'));
