@@ -776,6 +776,8 @@ class Product {
 const product1 = new Product('Coaster', 89.99)
 product1.handleFavoriteProduct()
 
+//asynchronous operation
+
 // callbacks -> promises
 
 // States of a promise:
