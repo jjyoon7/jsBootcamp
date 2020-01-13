@@ -775,3 +775,14 @@ class Product {
 
 const product1 = new Product('Coaster', 89.99)
 product1.handleFavoriteProduct()
+
+// callbacks -> promises
+
+// States of a promise:
+// pending - defautl value of promise 
+// fulfilled
+// rejected
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve('done'), 1000);  
+});
