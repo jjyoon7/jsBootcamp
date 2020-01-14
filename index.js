@@ -803,3 +803,10 @@ promise
 // read GET
 // update PUT / PATCH
 // delete DELETE
+
+//the endpoint url is wrong here, but
+//it will still fetch and return {} empty object
+fetch('https://jsonplaceholder.typicode.com/pots/1')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
