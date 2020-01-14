@@ -797,3 +797,9 @@ promise
 // API - Application Programming Interface: software to communicate with other software
 // API - helpful service
 // REST API  
+
+// CRUD 
+// create POST
+// read GET
+// update PUT / PATCH
+// delete DELETE
