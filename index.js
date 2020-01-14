@@ -808,10 +808,11 @@ promise
 //it will still fetch and return {} empty object
 fetch('https://jsonplaceholder.typicode.com/pots/1')
   //if response.ok is ture, the status code range would be 2xx
+  .then(response => {
   if (!response.ok) {
     throw new Error(response.status);  
     // 4xx range status code means the request had a problem
     // 5xx range status code means the server had a problem
-  }
+  })
   .then(data => console.log(data))
   .catch(error => console.error(error))
