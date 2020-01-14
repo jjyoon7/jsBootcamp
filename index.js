@@ -793,3 +793,7 @@ promise
   .then(value => console.log(value))
   .catch(error => console.error(error))
   .finally(() => console.log('done'));
+
+// API - Application Programming Interface: software to communicate with other software
+// API - helpful service
+// REST API  
