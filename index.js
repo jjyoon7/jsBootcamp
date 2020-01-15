@@ -854,3 +854,5 @@ async function getPost() {
   const data = await response.json();
   console.log(data);
 }
+
+getPost();
