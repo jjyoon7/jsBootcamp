@@ -828,3 +828,5 @@ fetch('https://jsonplaceholder.typicode.com/pots/1')
     })
     .then( data => console.log(`name: ${data.name}, company: ${data.company.name}`))
     .catch(error => console.log(error))
+
+    //mixin
