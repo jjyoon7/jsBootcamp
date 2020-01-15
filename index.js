@@ -833,6 +833,14 @@ fetch('https://jsonplaceholder.typicode.com/pots/1')
 
 
 //different way to resolve a Promise    
-async function getBlogPost() {}
+async function getBlogPost() {
+  const promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('blog post'), 1000);
+  });
+  
+  await promise
+    .then(value => console.log(value))
+    .finally(() => console.log('done'));
+}
 
 getBlogPost().then(() => console.log('works as a promise'));
