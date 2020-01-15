@@ -816,3 +816,15 @@ fetch('https://jsonplaceholder.typicode.com/pots/1')
   })
   .then(data => console.log(data))
   .catch(error => console.error(error))
+
+  fetch('https://jsonplaceholder.typicode.com/users/3')
+    .then( response => {
+        if(!response.ok) {
+            throw new Error(response.status)  
+          
+        } else {
+            response.json()  
+        }
+    })
+    .then( data => console.log(`name: ${data.name}, company: ${data.company.name}`))
+    .catch(error => console.log(error))
