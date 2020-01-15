@@ -867,6 +867,8 @@ getUser();
 
 async function runAsync() {
   try { 
+    //await keyword is the only thing that 
+    //converts the rejected promise to a catchable error
     await Promise.resolve('hello world'); 
     null.someProperty = true; 
   } catch (error) {
