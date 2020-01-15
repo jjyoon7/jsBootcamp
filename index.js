@@ -856,3 +856,21 @@ async function getPost() {
 }
 
 getPost();
+
+const getUser = async () => {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users/3');
+  const person = await response.json();
+  console.log(`${person.name} works for ${person.company.name}`);
+}
+
+getUser();
+
+async function runAsync() {
+  try { 
+    await Promise.reject();  
+  } catch (error) {
+      
+  }  
+}
+
+runAsync();
