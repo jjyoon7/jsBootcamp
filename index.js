@@ -869,7 +869,7 @@ async function runAsync() {
   try { 
     //await keyword is the only thing that 
     //converts the rejected promise to a catchable error
-    await Promise.resolve('hello world'); 
+    await Promise.reject('hello world'); 
     null.someProperty = true; 
   } catch (error) {
     console.error(error); 
@@ -877,3 +877,16 @@ async function runAsync() {
 }
 
 runAsync();
+
+async function getGithubUser() {
+  try {    
+    const response = await fetch('https://api.github.com/users/laksjdflasjfdlkjadfjk');
+    if (!response.ok) {
+      throw new Error(response.status);  
+    }
+  } catch (error) {
+    console.log('Could not fetch user, try resetting your connection');
+    console.error(error);  
+  } 
+}
+getGithubUser();
