@@ -838,9 +838,9 @@ async function getBlogPost() {
     setTimeout(() => resolve('blog post'), 1000);
   });
   
-  await promise
-    .then(value => console.log(value))
-    .finally(() => console.log('done'));
+  const result = await promise;
+  console.log(result);
+  console.log('done');
 }
 
-getBlogPost().then(() => console.log('works as a promise'));
+getBlogPost()
