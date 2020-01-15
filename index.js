@@ -830,3 +830,9 @@ fetch('https://jsonplaceholder.typicode.com/pots/1')
     .catch(error => console.log(error))
 
     //mixin
+
+
+//different way to resolve a Promise    
+async function getBlogPost() {}
+
+getBlogPost().then(() => console.log('works as a promise'));
