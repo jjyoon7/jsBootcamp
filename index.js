@@ -867,9 +867,10 @@ getUser();
 
 async function runAsync() {
   try { 
-    await Promise.reject();  
+    await Promise.resolve('hello world'); 
+    null.someProperty = true; 
   } catch (error) {
-      
+    console.error(error); 
   }  
 }
 
