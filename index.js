@@ -890,3 +890,19 @@ async function getGithubUser() {
   } 
 }
 getGithubUser();
+
+const getUser = async () => {
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users/0dk1');
+    if(!response.ok){
+      throw new Error(response.status);
+    }
+      const person = await response.json();
+      console.log(`${person.name} works for ${person.company.name}`);
+    }
+  catch (error) {
+    console.log(error)
+  }
+}
+
+getUser();
