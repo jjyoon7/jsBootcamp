@@ -1,4 +1,4 @@
-import {getData} from "./utils/data"
+import {getData} from "./utils/data.js"
 
 class App {
   constructor() {
