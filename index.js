@@ -1,4 +1,4 @@
-import { getDate, year } from "./utils/date.js"
+import { getDate, year as currentYear } from "./utils/date.js"
 
 class App {
   constructor() {
@@ -7,7 +7,7 @@ class App {
   
   render() {
     document.getElementById('root').innerHTML = `
-      <div>Date: ${getDate()} and ${year}</div>
+      <div>Date: ${getDate()} and ${currentYear}</div>
     `
   }
 }
