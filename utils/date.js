@@ -1,8 +1,8 @@
-function getDate() {
-    const date = new Date()
+export default function getDate() {
+    const year = new Date().getFullYear()
+    const date = `date: ${new Date()} and year:${year}`
     return date
 }
 
-const year = new Date().getFullYear()
 
-export { getDate, year }
+
