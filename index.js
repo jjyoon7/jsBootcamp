@@ -1,4 +1,4 @@
-import {getData} from "./utils/data.js"
+import { getDate } from "./utils/date.js/index.js"
 
 class App {
   constructor() {
@@ -6,6 +6,10 @@ class App {
   }
 
   render() {
-    getData()
+    document.getElementById("root").innerHTML = `
+      data: ${getDate}
+    `
   }
 }
+
+new App()
