@@ -1,13 +1,13 @@
-import { getDate } from "./utils/date.js/index.js"
+import { getDate, year } from "./utils/date.js"
 
 class App {
   constructor() {
-    this.render()
-  }
-
+    this.render()  
+  }  
+  
   render() {
-    document.getElementById("root").innerHTML = `
-      data: ${getDate}
+    document.getElementById('root').innerHTML = `
+      <div>Date: ${getDate()} and ${year}</div>
     `
   }
 }
