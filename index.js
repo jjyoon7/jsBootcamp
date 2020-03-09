@@ -87,3 +87,15 @@ printBio.apply(user, ['London', 'England'])
 
 //once you use .bind() to determine 'this', it is determined for good.
 printUser.bind(user);
+
+const user = {
+  first: 'Bob',
+  fn() {
+     console.log(this.first); 
+  },
+  arrowFn: () => {
+    console.log(this.first);  
+  }
+}
+
+user.arrowFn();
