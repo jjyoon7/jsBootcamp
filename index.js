@@ -6,24 +6,23 @@ class App {
       isAuth: false,
       error: ""
     }
-    this.render();
-    this.$userMessage = document.getElementById("user-message");
     this.checkAuth();
+    this.render();
   }
 
   checkAuth() {
     if (user) {
-      this.$userMessage.textContent = "Welcome back!";
+      this.state = {...this.state, isAuth: true}
     } else {
-      this.$userMessage.textContent = "You must sign in!";
-      this.$userMessage.style.color = "red";
+      this.state = { ...this.state, error: "You must sign in!" }
     }
   }
 
   render() {
+    const {isAuth, error} = this.state 
     document.getElementById("root").innerHTML = `
       <div>
-        <span id="user-message"></span>
+        { isAuth ? "welcome back" : error}
       </div>
     `;
   }
