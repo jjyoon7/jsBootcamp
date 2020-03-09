@@ -59,3 +59,16 @@ document.body.appendChild(button);
 button.addEventListener('click', function() {
   console.log(this);
 })
+
+// call(), apply(), bind()
+
+const user = {
+  name: "Reed",
+  title: "Programmer"  
+}
+
+function printUser() {
+  console.log(`${this.name} is a ${this.title}`);
+}
+
+printUser.call(user);
