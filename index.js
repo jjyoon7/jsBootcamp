@@ -6,3 +6,9 @@
 // 2) as a method on an object
 // 3) as a constructor function or class constructor
 // 4) as a DOM event handler
+
+function whatIsThis() {
+  console.log(this);
+}
+
+whatIsThis();
