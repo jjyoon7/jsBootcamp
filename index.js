@@ -25,3 +25,17 @@ const userInfo = {
 }
 
 userInfo.user.greetUser()
+
+class User {
+  constructor(first, age) {
+    this.first = first;
+    this.age = age;  
+  }  
+  
+  getAge() {
+    console.log(`${this.first}'s age is ${this.age}`);  
+  }
+}
+
+const user = new User('Bob', 24);
+user.getAge();
