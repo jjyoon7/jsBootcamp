@@ -39,3 +39,15 @@ class User {
 
 const user = new User('Bob', 24);
 user.getAge();
+
+function User(first, age) {
+  this.first = first;
+  this.age = age;
+}
+
+User.prototype.getAge = function() {
+  console.log(`${this.first}'s age is ${this.age}`);  
+}
+
+const user2 = new User('jane', 25);
+user2.getAge();
