@@ -12,3 +12,16 @@ function whatIsThis() {
 }
 
 whatIsThis();
+
+const userInfo = {
+  title: "Programmer",
+  user: {
+     first: 'Reed',
+     last: 'Barger',
+     greetUser() {
+      console.log(`Hi, ${this.first} ${this.last} ${this.title}`);  
+     }   
+  }  
+}
+
+userInfo.user.greetUser()
