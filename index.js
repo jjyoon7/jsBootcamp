@@ -72,3 +72,15 @@ function printUser() {
 }
 
 printUser.call(user);
+
+const user = {
+  name: "Reed",
+  title: "Programmer"  
+}
+
+function printBio(city, country) {
+  console.log(`${this.name} is a ${this.title} in ${city}, ${country}`);
+}
+
+printBio.call(user, 'London', 'England')
+printBio.apply(user, ['London', 'England'])
