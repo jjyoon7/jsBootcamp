@@ -85,4 +85,5 @@ function printBio(city, country) {
 printBio.call(user, 'London', 'England')
 printBio.apply(user, ['London', 'England'])
 
+//once you use .bind() to determine 'this', it is determined for good.
 printUser.bind(user);
