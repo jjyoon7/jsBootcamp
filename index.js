@@ -84,3 +84,5 @@ function printBio(city, country) {
 
 printBio.call(user, 'London', 'England')
 printBio.apply(user, ['London', 'England'])
+
+printUser.bind(user);
