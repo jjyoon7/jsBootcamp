@@ -11,6 +11,7 @@ class App {
   }
 
   checkAuth() {
+    const user = false;
     if (user) {
       this.state = {...this.state, isAuth: true}
     } else {
@@ -21,7 +22,7 @@ class App {
   render() {
     const {isAuth, error} = this.state 
     document.getElementById("root").innerHTML = `
-      <div>
+      <div style="color: ${error && "red"}">
         { isAuth ? "welcome back" : error}
       </div>
     `;
