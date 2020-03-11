@@ -2,7 +2,12 @@
 // const reducer = (state, action) => newState
 
 function counterReducer(state, action) {
-  return state + 1;  
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state  
+  }
 }
-
-console.log(counterReducer(0) === 1);
